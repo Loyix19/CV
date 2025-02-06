@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi sitio web xd</title>
+
+    <link rel="shortcut icon" href="../media/Imagenes/logo.svg" type="image/svg">
+    <link rel="stylesheet" href="../CSS/site.css">
+    
+    <!-- css.gg -->
+    <link href='https://css.gg/css' rel='stylesheet'>
+    
+    <!-- UNPKG -->
+    <link href='https://unpkg.com/css.gg/icons/all.css' rel='stylesheet'>
+    
+    <!-- JSDelivr -->
+    <link href='https://cdn.jsdelivr.net/npm/css.gg/icons/all.css' rel='stylesheet'>
+    
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-content">
+        <aside>
+            <div class="profile">
+                <img src="../media/Imagenes/perfil.jpg" id="photo-profile" class="my-photo">
+        
+                <div>
+                    <h1 class="title">Carlos Morales Alvarado</h1>
+                    <div class="badge-profile">Alumno</div>
+
+                    <div class="social">
+                        <a href="https://www.facebook.com" target="_blank"><i class="gg-facebook"></i></a>
+                        <a href="https://x.com" target="_blank"><i class="gg-twitter"></i></a>
+                        <a href="https://www.youtube.com" target="_blank"><i class="gg-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="info">
+                    <ul class="contacts-block">
+                        <li class="contacts-block-item"><i class="gg-calendar"></i>&nbsp;&nbsp;18 de Julio del 2004</li>
+                        <li class="contacts-block-item"><i class="gg-pin"></i>&nbsp;&nbsp;Puebla, Puebla</li>
+                        <li class="contacts-block-item"><i class="gg-mail"></i>&nbsp;&nbsp;<a href="mailto:nocarlos@gmail.com">nocarlosma4@gmail.com</a></li>
+                        <li class="contacts-block-item"><i class="gg-phone"></i>&nbsp;&nbsp;+52 22-24-72-77-22</li>
+                        <li class="contacts-block-item"><i class="gg-phone"></i>&nbsp;&nbsp;+52 22-24-72-77-22</li>
+                    </ul>
+                    <a href="#" class="btn">Download CV</a>
+                </div>
+            </div>
+        </aside>
+        <section class="resume">
+            <h2 class="bordered">Portafolio</h2>
+            <div class="portfolio">
+                <img src="../media/Imagenes/B&K.jpg" onclick="showImage(this)">
+                <img src="../media/Imagenes/Cr&Co.jpg" onclick="showImage(this)">
+                <img src="../media/Imagenes/G&G.jpg" onclick="showImage(this)">
+                <img src="../media/Imagenes/G&G.jpg" onclick="showImage(this)">
+                <img src="../media/Imagenes/jolounight.jpg" onclick="showImage(this)">
+                <img src="../media/Imagenes/K&G.jpg" onclick="showImage(this)">
+                <img src="../media/Imagenes/M&L.jpg" onclick="showImage(this)">
+                <img src="../media/Imagenes/S&A.png" onclick="showImage(this)">
+                <img src="../media/Imagenes/S&T.jpg" onclick="showImage(this)">
+
+                <div class="modal" id="preview" onclick="cerrarModal()"></div>
+            </div>
+            <header>
+                <div class="menu-circle">
+                    <i class="gg-menu-oreos" onclick="toggleMenu()"></i>
+                </div>
+                <div class="inner-menu js-menu">
+                    <ul class="nav">
+                        <li class="nav-item"><a href="../index.html">Acerca de...</a></li>
+                        <li class="nav-item"><a href="portfolio.html">Portafolio</a></li>
+                    </ul>
+                </div>
+            </header>
+        </section>
+    </div>
+    <footer>Autor: Carlos Morales Alvarado</footer>
+    <div id="copyright" style="display: none;">UWU</div>
+
+    <script src="../JS/site.js"></script>
+</body>
+</html>

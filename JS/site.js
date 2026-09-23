@@ -26,11 +26,19 @@ function showImage(image) {
         modal.removeChild(existingImage);
     }
 
+    newImage.onclick = function (event) {
+        event.stopPropagation();
+    };
+
     modal.appendChild(newImage);
     modal.classList.add('showModal');
 }
 
-function cerrarModal() {
+function cerrarModal(event) {
+    if (event) {
+        event.stopPropagation();
+    }
+
     var modal = document.getElementById('preview');
     modal.classList.remove('showModal');
 

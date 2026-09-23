@@ -81,7 +81,9 @@
                     </div>
                 </article>
 
-                <div class="modal" id="preview" onclick="cerrarModal()"></div>
+                <div class="modal" id="preview" onclick="cerrarModal(event)">
+                    <button type="button" class="modal-close" aria-label="Cerrar imagen" onclick="cerrarModal(event)">&times;</button>
+                </div>
             </div>
             <header>
                 <div class="menu-circle">

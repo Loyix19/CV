@@ -60,6 +60,7 @@ p {
 
 .portfolio{
     display: grid;
+    grid-template-columns: minmax(0, 1fr);
     gap: 1.5rem;
 }
 
@@ -67,6 +68,7 @@ p {
     background-color: rgba(255, 255, 255, 0.08);
     border-radius: 12px;
     padding: 1.25rem;
+    min-width: 0;
 }
 
 .portfolio-project h3 {
@@ -80,14 +82,15 @@ p {
 
 .portfolio-images {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 0.75rem;
 }
 
 .portfolio-images img {
     width: 100%;
     aspect-ratio: 16 / 10;
-    object-fit: cover;
+    object-fit: contain;
+    background-color: #18233a;
     border-radius: 8px;
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
@@ -504,6 +507,10 @@ footer {
     .resume {
         margin: unset;
         width: 100%;
+    }
+
+    .portfolio-images {
+        grid-template-columns: 1fr;
     }
 }
 

@@ -81,7 +81,7 @@ CV/
 
 ## Contacto
 
-- Correo: [nocarlosma4@gmail.com](mailto:nocarlosma4@gmail.com)
+- Correo: [carlosmora1924@gmail.com](mailto:carlosmora1924@gmail.com)
 - GitHub: [Loyix19](https://github.com/Loyix19)
 
 ## Autor
